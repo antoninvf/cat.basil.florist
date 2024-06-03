@@ -80,7 +80,7 @@ export default function IndexPage() {
 
 					<Button
 						component="a"
-						href="https://cat.basil.florist"
+						href="https://cat.basil.florist/browse"
 						size="xl"
 						variant="default"
 						className={classes.control}
