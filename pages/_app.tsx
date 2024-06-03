@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }: any) {
 				<meta property="og:url" content="https://cat.basil.florist/" />
 				<meta
 					property="og:image"
-					content="https://api.flwn.dev/catcollection/visitrandom"
+					content="https://cat.basil.florist/kitty.gif"
 				/>
 				<meta
 					property="og:description"
