@@ -1,12 +1,4 @@
-import {
-	Container,
-	Text,
-	Button,
-	Group,
-	Paper,
-	Center,
-	Title,
-} from '@mantine/core';
+import { Container, Text, Button, Group, Paper, Flex } from '@mantine/core';
 import classes from './HeroTitle.module.css';
 import { useEffect, useState } from 'react';
 import { IconBooks, IconCat } from '@tabler/icons-react';
@@ -92,9 +84,15 @@ export default function IndexPage() {
 			</Container>
 
 			<Paper shadow="md" h={'12vh'}>
-				<Center h={'100%'}>
-					<Title order={2}>
-						by{' '}
+				<Flex
+					h={'100%'}
+					w={'100%'}
+					direction={'column'}
+					justify={'center'}
+					align={'center'}
+				>
+					<Text fw={500}>
+						website by{' '}
 						<Text
 							component="span"
 							variant="gradient"
@@ -105,8 +103,31 @@ export default function IndexPage() {
 								Flowyan
 							</Link>
 						</Text>
-					</Title>
-				</Center>
+					</Text>
+					<Text fw={500}>
+						pictures collected by{' '}
+						<Text
+							component="span"
+							variant="gradient"
+							inherit
+							gradient={{ from: 'yellow', to: 'pink', deg: 90 }}
+						>
+							<Link href="https://basil.florist" target="_blank">
+								Chutoy
+							</Link>
+						</Text>
+					</Text>
+					<Text fw={500}>
+						<Text
+							component="span"
+							variant="gradient"
+							inherit
+							gradient={{ from: 'purple', to: 'green', deg: 90 }}
+						>
+							<Link href="/credits">credits for the pictures</Link>
+						</Text>
+					</Text>
+				</Flex>
 			</Paper>
 		</div>
 	);
