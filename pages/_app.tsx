@@ -12,6 +12,18 @@ export default function App({ Component, pageProps }: any) {
 					name="viewport"
 					content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
 				/>
+				<meta property="og:title" content="kitty cats :3" />
+				<meta property="og:type" content="website" />
+				<meta property="og:url" content="https://cat.basil.florist/" />
+				<meta
+					property="og:image"
+					content="https://api.flwn.dev/catcollection/visitrandom"
+				/>
+				<meta
+					property="og:description"
+					content="website with a collection of thousands of kitty cats!"
+				/>
+				<meta name="theme-color" content="#FF80FF" />
 				<style>
 					{`
           body {
